@@ -45,6 +45,10 @@ body {
     font-weight: 600;
     margin-top: 1em;
   }
+  section {
+    border-top: 1px solid #eee;
+    padding-top: 2em;
+  }
   
   .intro {
     margin-bottom: 2em;
