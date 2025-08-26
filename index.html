@@ -12,90 +12,114 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="https://www.linkedin.com/in/andrew-taylor-39b453201">Linkedin</a></li>
-		<li><a href="#contact">Contact Me</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume (PDF)</a></li>
+        <li><a href="https://www.linkedin.com/in/andrew-taylor-39b453201">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h1>Hi, I'm Andrew Taylor</h1>
+      <h1>Hi, I'm Andrew</h1>
       <p>
-        I'm a rising junior studying data science and computer science at UC Berkeley. Some of my interests include machine learning, data engineering, and computing education.
+        I'm a junior at UC Berkeley studying Data Science with a minor in Computer Science. I love maintaining and
+        analyzing data, and hope to have a future career in data engineering, data science or analytics.
+        I'm also an Undergraduate Student Instructor for UC Berkeley's largest course, Data 8: Foundations of Data Science.
       </p>
     </section>
-	
-	<section class="experience" id="experience">
-		<h2>Experience</h2>
-	  
-		<div class="job">
-			<h3>Data 8 Undegraduate Student Instructor (TA), UC Berkeley College of Computing, Data Science and Society</h3>
-			<p class="date">January 2025 – Present</p>
-			<ul>
-			  <li>Teach a weekly 2-hour lab section of 42 students, reinforcing data science concepts.</li>
-			  <li>Provide individualized support on assignments and projects, covering techniques such as Python, NumPy, A/B testing, MLR, bootstrapping, and k-nearest neighbors.</li>
-			  <li>Contribute to the pedagogy team by reviewing and refining discussion worksheets, homework assignments, and lab notebooks.</li>
-			</ul>
-			<h3>Data 8 Undegraduate Course Staff (Tutor), UC Berkeley College of Computing, Data Science and Society</h3>
-			<p class="date">August 2024 – December 2024</p>
-			<ul>
-			  <li>Designed and led interactive weekly sessions for 10-15 students, covering fundamental data science concepts, programming basics, statistical analysis, and data visualization.</li>
-			</ul>
-		</div>
 
-		<div class="job">
-		  <h3>Data Science Intern – Ten Strands</h3>
-		  <p class="date">June 2024 – August 2024</p>
-		  <ul>
-			<li>Built Python-based data pipelines in Jupyter Notebook to process, clean, and analyze datasets for 900+ California school districts, integrating climate model projections (high-heat, wildfire, sea-level rise) over the next 40 years.</li>
-			<li>Developed a climate risk analysis system, calculating individualized climate risks for all 58 California counties and 936 school districts, identifying over 5 million students and 9,000 campuses at risk.</li>
-			<li>Designed and deployed interactive data visualizations in Tableau, enabling administrative leaders to assess climate risk through intuitive maps and analytics dashboards.</li>
-			<li>Co-authored a white paper to be published and presented at the Green CA Schools and Higher Education Summit, translating data insights into actionable policy recommendations.</li>
-		</ul>
-		</div>
-	  
-		<div class="job">
-		  <h3>Associate Consultant – BEACN at UC Berkeley</h3>
-		  <p class="date">September 2024 – Present</p>
-		  <ul>
-			<li>Worked with AC Transit and Union of Concerned Scientists to analyze transit emissions and sustainability</li>
-			<li>Led data collection and visualization to support local climate policy recommendations</li>
-		  </ul>
-		</div>
-	  
-		<!-- Add more jobs below as needed -->
-	</section>
-	
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
+    <!-- NEW: two-column wrapper -->
+    <div class="two-column">
+      <section class="experience" id="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+          <h3>Full-Stack Developer Intern — Athena (EdTech Startup)</h3>
+          <p class="date">May 2025 – Present • Berkeley, CA</p>
+          <ul>
+            <li>Designed and built a dynamic flashcard learning app (React front end; Python + SQL backend).</li>
+            <li>Engineered ETL pipelines to extract lecture transcripts, generate flashacrds via REST API calls to a LLM, transform
+              the results in Python with Pandas, and load custom-generated flashcards to our database.</li>
+            <li>Designed and maintained a PostgreSQL database for flashcard sets, user activity logs, and engagement tracking.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Undergraduate Student Instructor — Foundations of Data Science (Data 8)</h3>
+          <p class="date">Aug 2024 – Present • UC Berkeley</p>
+          <ul>
+            <li>Lead weekly 2-hour lab sections of over 40 students, providing instruction and guided support on Python programming, statistics and other data science topics.</li>
+            <li>Design helpful and engaging presentations, drawing on expertise in A/B testing, linear regression, bootstrapping, hypothesis testing, k-nearest neighbors and many other foundational techniques.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Data Science Intern — Ten Strands</h3>
+          <p class="date">May 2024 – Sept 2024 • Berkeley, CA</p>
+          <ul>
+            <li>Built a climate risk analysis system using Python and Jupyter Notebook to process and analyze datasets for
+              900+ California school districts, integrating existing long-term projections for heat, wildfire, and sea-level rise.</li>
+            <li>Designed interactive Tableau dashboards and co-authored a white paper, translating insights into policy
+              recommendations for the Green CA Schools Summit.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Associate Consultant — BEACN (UC Berkeley)</h3>
+          <p class="date">Sept 2023 – May 2024 • Berkeley, CA</p>
+          <ul>
+            <li>Applied NLP techniques to extract keywords from hundreds of federal documents, then used OLS regression to
+              identify factors significantly impacting NEPA compliance timelines for the Union of Concerned Scientists.</li>
+            <li>Analyzed air quality, demographics, and geographic data for AC Transit to address their Clean Corridors Plan,
+              developing strategies for zero-emission bus deployment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>🏟️ Automated ESPN Article Database</strong><br />
+            End-to-end ELT: Python → Snowflake → dbt → Apache Airflow. Parses ESPN API JSON, warehouses it, and runs scheduled transformations.<br />
+            <a href="https://github.com/andrewctaylor/espn_data_pipeline" target="_blank" rel="noopener">View on GitHub</a>
+          </li>
+          <li>
+            <strong>📊 Data Science Table Animation Visualizer</strong><br />
+            Python + Manim tool that animates row/column/cell-level table operations with transitions and side-by-side comparisons.<br />
+            <a href="https://github.com/andrewctaylor/Data-Table-Visualizer" target="_blank" rel="noopener">View on GitHub</a>
+          </li>
+          <li>
+            <strong>🧠 AI Flashcard Generator</strong><br />
+            App pipeline that turns lectures into flashcards via LLM APIs, with normalized Postgres schemas for usage and engagement tracking.<br />
+            <em>Productized at Athena; public demo coming soon.</em>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- /two-column -->
+
+    <section class="skills" id="skills">
+      <h2>Technical Skills</h2>
       <ul>
-        <li>
-          <strong>📊 Data Table Visualizer</strong><br />
-          Animated educational tool using Manim and Python. <br />
-          <a href="https://github.com/andrewctaylor/Data-Table-Visualizer" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-          <strong>🧠 AI Flashcard Generator</strong><br />
-          Flashcards from lectures using NLP and vector embeddings. <br />
-          <a href="#" target="_blank">Coming Soon</a>
-        </li>
-        <!-- Add more projects as needed -->
+        <li><strong>Languages:</strong> Python (pandas, NumPy), SQL (PostgreSQL), Java, C, JavaScript</li>
+        <li><strong>Frameworks/Tools:</strong> Apache Airflow, dbt, Snowflake, React, Tableau, PyTorch, scikit-learn</li>
+        <li><strong>Developer Tools:</strong> Git, Jupyter, Docker, VS Code, IntelliJ</li>
       </ul>
     </section>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	
-	<section id="contact">
-		<h2>Contact Me</h2>
-		<p>Email: <a href="mailto:andrewtaylor@berkeley.edu">andrewtaylor@berkeley.edu</a></p>
-		<p>
-			<i class="fab fa-linkedin"></i>
-			<a href="https://www.linkedin.com/in/andrew-taylor-39b453201" target="_blank">
-			  linkedin.com/in/andrew-taylor-39b453201
-			</a>
-		  </p>
-	</section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:andrewtaylor@berkeley.edu">andrewtaylor@berkeley.edu</a></p>
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/andrew-taylor-39b453201" target="_blank" rel="noopener">
+          linkedin.com/in/andrewtaylor-39b453201
+        </a>
+      </p>
+    </section>
   </main>
 
   <footer>
